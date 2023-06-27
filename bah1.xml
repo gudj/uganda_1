@@ -1,0 +1,25 @@
+<AppHdr xmlns="urn:iso:std:iso:20022:tech:xsd:head.001.001.01">
+  <Fr>
+    <FIId>
+      <FinInstnId>
+        <BICFI>NDEAFIHHXXX</BICFI>
+        <ClrSysMmbId>
+          <MmbId>990000001S1</MmbId>
+        </ClrSysMmbId>
+      </FinInstnId>
+    </FIId>
+  </Fr>
+  <To>
+    <FIId>
+      <FinInstnId>
+        <BICFI>APKEFIHHXXX</BICFI>
+        <ClrSysMmbId>
+          <MmbId>021200201A1</MmbId>
+        </ClrSysMmbId>
+      </FinInstnId>
+    </FIId>
+  </To>
+  <BizMsgIdr>B20161207020010001ABBRRR00000959001</BizMsgIdr>
+  <MsgDefIdr>pacs.002.001.07</MsgDefIdr>
+  <CreDt>2016-12-07T05:51:17</CreDt>
+</AppHdr>

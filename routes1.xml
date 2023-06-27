@@ -1,0 +1,58 @@
+
+<Routes>
+    <Subsystem  name="MT">
+        <Destination  name="App" queue="app_mt_q">
+            <route  message="546"  sender="NDEAFIHH" receiver="APKEFIHH"></route>
+            <route  message="547"  sender="SWEDSESS" receiver="APKEFIHH"></route>
+            <route  message="548"  sender="SESESESS" receiver="APKEFIHH"></route>
+        </Destination>
+        <Destination  name="PARTI" queue="nde_mt_q">
+            <route  message="546"  sender="APKEFIHH" receiver="NDEAFIHH"></route>
+            <route  message="547"  sender="APKEFIHH" receiver="NDEAFIHH"></route>
+            <route  message="549"  sender="APKEFIHH" receiver="NDEAFIHH"></route>
+        </Destination>
+    </Subsystem>
+    <Subsystem  name="MX">
+        <Destination  name="App" queue="app_q" copy="true">
+            <route  message="sese.020"  sender="SWEDSESS" receiver="APKEFIHH"></route>
+            <route  message="sese.030"  sender="SESESESS" receiver="APKEFIHH"></route>
+            <route  message="sese.023"  sender="NDEAFIHH" receiver="APKEFIHH"></route>
+            <route  message="semt.018"  sender="NDEAFIHH" receiver="APKEFIHH"></route>
+            <route  message="camt.123"  sender="OMEC" receiver="APKEFIHH"></route>
+        </Destination>
+        <Destination  name="PARTI" queue="nde_mx_q" copy="true">
+            <route  message="sese.024"  sender="APKEFIHH" receiver="NDEAFIHH"></route>
+            <route  message="sese.027"  sender="NOMIFIHHXXX" receiver="ABSAFIHH"></route>
+            <route  message="sese.027"  sender="APKEFIHH" receiver="NDEAFIHH"></route>
+            <route  message="sese.032"  sender="APKEFIHH" receiver="NDEAFIHH"></route>
+            <route  message="camt.678"  sender="APKEFIHH" receiver="NDEAFIHH"></route>
+        </Destination>
+        <Destination  name="T2S" queue="tgt_q">
+            <route  message="sese.023"  sender="NDEAFIHHXXX" receiver="TRGTE2CBXXX"></route>
+            <route  message="sese.023"  sender="NOMIFIHHXXX" receiver="ABSAFIHH"></route>
+            <route  message="sese.030"  sender="NOMIFIHHXXX" receiver="ABSAFIHH"></route>
+            <route  message="sese.023"  sender="NDEAFIHHXXX" receiver="APKEFIHH"></route>
+            <route  message="sese.023"  sender="NDEAFIHH" receiver="APKEFIHH"></route>
+            <route  message="sese.023"  sender="SWEDSESS" receiver="TRGTE2CBXXX"></route>
+            <route  message="sese.023"  sender="SESESESS" receiver="TRGTE2CBXXX"></route>
+            <route  message="sese.023"  sender="OMEC" receiver="TRGTE2CBXXX"></route>
+        </Destination>
+        <Destination  name="Test" queue="tgt_test">
+            <route  message="sese.023"  sender="NDEAFIHHXXX" receiver="TRGTE2CBXXX"></route>
+            <route  message="sese.023"  sender="NOMIFIHHXXX" receiver="ABSAFIHH"></route>
+            <route  message="sese.030"  sender="NOMIFIHHXXX" receiver="ABSAFIHH"></route>
+            <route  message="sese.023"  sender="NDEAFIHHXXX" receiver="APKEFIHH"></route>
+            <route  message="sese.023"  sender="SWEDSESS" receiver="TRGTE2CBXXX"></route>
+            <route  message="sese.023"  sender="SESESESS" receiver="TRGTE2CBXXX"></route>
+            <route  message="sese.023"  sender="OMEC" receiver="TRGTE2CBXXX"></route>
+        </Destination>
+    </Subsystem>
+    <Subsystem  name="MT">
+        <Destination  name="Fourth">
+            <route  name="AtmoStyleSwitchLayerOnAct_v2"  VALUE="no"></route>
+            <route  name="OmnisphereStartupPage_v2"  VALUE="Edit"></route>
+            <route  name="CoralStartupPage_v2"  VALUE="MainControls"></route>
+        </Destination>
+    </Subsystem>
+</Routes>
+ 
